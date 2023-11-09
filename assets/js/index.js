@@ -7,28 +7,50 @@
 
 var timeEl = $('#currentDay');
 
-//adds event listener to remove delay and lets DOM load first
-document.addEventListener('DOMContentLoaded', function() {
-    //timeEl stores currentDay
-    var timeEl = document.getElementById('currentDay');
+//adds event listener (document.ready) to remove delay and lets DOM load first
+//code from example in lesson with modifications
+$(document).ready(function() {
+
+    var timeEl = $('#currentDay');
 
     function displayDay() {
-        var rightNow = dayjs().format('dddd D MMMM YYYY [at] h:mm:ss a');
-        timeEl.textContent = rightNow;
+        var rightNow = dayjs().format('dddd D MMMM YYYY [at] hh:mm:ss a'); timeEl.text(rightNow);
     }
 
     displayDay();
     setInterval(displayDay, 1000);
 });
+//to put date to scroll
+$(document).ready(function () {
+  var currentDate = dayjs(); // dayjs() gets today's date
+  var container = $('.container');
+  var currentDateElement = $('#currentDate');
+
+  function updateCalendar() {
+    currentDateElement.text(currentDate.format('dddd, MMMM D, YYYY'));
+
+    // need to be able to update time blocks
+    
+  }
+
+  // "Previous Day" button click
+  $('#prevDay').click(function () {
+    currentDate = currentDate.subtract(1, 'day');
+    updateCalendar();
+  });
+
+  // "Next Day" button click
+  $('#nextDay').click(function () {
+    currentDate = currentDate.add(1, 'day');
+    updateCalendar();
+  });
+
+  // Calendar call function
+  updateCalendar();
+});
 
 
-// //time display code from lesson/research
-//works but there is a delay when loading
-// function displayDay() {
-//     var rightNow = dayjs().format('dddd D MMMM YYYY [at] hh:mm:ss a'); timeEl.text(rightNow);
-//     $("#currentDay").text(rightNow);
-// };
-
+  
 
 // $(document).ready(function () {
 //     var rootElement = $('#root');

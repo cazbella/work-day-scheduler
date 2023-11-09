@@ -70,3 +70,35 @@ header {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* adds border to each hour */
+.hour {
+  /* background-color: #ffffff; */
+  color: #000000;
+  border-top: 1px dashed #000000;
+  border: 1px solid #000000; /* Add this line for a border around each hour */
+}
+
+.time-block {
+  border: 1px solid #000000; /* Add this line for a border around each time block */
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px; /* Add padding to create separation between the border and inner elements */
+}
+
+.calendar-container {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.calendar-container {
+  padding: 20px; /* Add padding around the content */
+  border: 2px solid #000000; /* Add a 2-pixel solid border around the container */
+}
