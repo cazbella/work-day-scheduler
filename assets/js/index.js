@@ -1,13 +1,11 @@
 
 //get elements
 
-
-
 //Display the current day at the top of the calender when a user opens the planner.
 
 var timeEl = $('#currentDay');
 
-//adds event listener (document.ready) to remove delay and lets DOM load first
+//adds event listener (document.ready) to remove delay and lets DOM load first. There is a delay without this.
 //code from example in lesson with modifications
 $(document).ready(function() {
 
@@ -49,18 +47,18 @@ $(document).ready(function () {
   updateCalendar();
 });
 
+//Next need to
+  //load items from local storage on page 
+  //or use the ' ' empty bracket code to clear tect area if no even - like in the lesson
+  //update 'currentDate' with date of current day of the CALENDAR - not visible. link to actual time
+  //need variable current date
+  //need a for loop for i to loop through times of the day. Need to use hours of the day (9-18??)
+  //need variables to store elements after finding current value of i
+  //need conditional to check whether there are events stored for the current hour (i) within the events object.
+  //there are events for the current hour, need to set the value of the timeSlot element to the corresponding event text. If there are no events, need to clear the text area by setting its value to an empty string (like in lesson code)
+//Then
+// Color-code each timeblock based on past, present, and future when the timeblock is viewed.//use CSS classes in style.css
 
-  
-
-// $(document).ready(function () {
-//     var rootElement = $('#root');
-// });
-
-// Present timeblocks for standard business hours when the user scrolls down.
-//create table using div in html
-
-
-// Color-code each timeblock based on past, present, and future when the timeblock is viewed.
 //adjust css using jquery depending on click events
 
 
