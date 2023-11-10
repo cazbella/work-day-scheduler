@@ -6,9 +6,11 @@ $(document).ready(function () {
   var timeEl = $('#currentDay');
   var container = $('.container');
   var currentDateElement = $('#currentDate');
+  var container = $('.calendar-container');
+  var currentDateElement = $('#currentDate');
 
   function displayDay() {
-    var rightNow = dayjs().format('dddd D MMMM YYYY [at] hh:mm:ss a'); timeEl.text(rightNow);
+    var rightNow = dayjs().format('dddd D MMMM YYYY [at] h:mm:ss a'); timeEl.text(rightNow);
   }
 
   displayDay();
@@ -42,16 +44,9 @@ $(document).ready(function () {
   //need a for loop for i to loop through times of the day. Need to use hours of the day (9-18??)
   //need variables to store elements after finding current value of i
   //need conditional to check whether there are events stored for the current hour (i) within the events object.
-  //there are events for the current hour, need to set the value of the timeSlot element to the corresponding event text. If there are no events, need to clear the text area by setting its value to an empty string (like in lesson code)
-  //Then
-  // Color-code each timeblock based on past, present, and future when the timeblock is viewed.//use CSS classes in style.css//need if statemnent 
+  //there are events for the current hour, need to set the value of the timeSlot element to the corresponding event text. If there are no events, need to clear the text area by setting its value to an empty string (like in lesson code
 
-
-  var container = $('.calendar-container');
-  var currentDateElement = $('#currentDate');
-  // var currentDate = dayjs(); // today's date
-
-  
+  //worked through with tutor
   function updateCalendar() {
     console.log("in the update fnction: ", currentDate.$D)
     //updates the text content of the HTML element with the id "currentDate" to display the current date in a specific format using the format method of the currentDate object
@@ -97,8 +92,6 @@ $(document).ready(function () {
     }
   }
 
-
-
   function saveEvent() {
     var timeBlockId = $(this).parent().attr('id');
     var eventText = $(this).siblings('.activity').val();
@@ -111,6 +104,27 @@ $(document).ready(function () {
       //converted to string
       ('YYYY-MM-DD'), JSON.stringify(events));
   }
+
+  $('.saveBtn').click(saveEvent);
+  updateCalendar();
+
+function deleteEvent() {
+  var timeBlockId = $(this).parent().attr('id');
+  //retrieves specific time block
+  var events = JSON.parse(localStorage.getItem
+    //retrieves events from local storage
+    (currentDate.format('YYYY-MM-DD'))) || {};
+  delete events[parseInt(timeBlockId)];
+  //deletes event in the time block
+  localStorage.setItem(currentDate.format
+    //re-saves event
+    ('YYYY-MM-DD'), JSON.stringify(events));
+  updateCalendar();
+}
+//event listener jquery. $document refers to the whole document
+//.on targets element click on delete button. This is Jquery. 
+$(document).on('click', '.deleteBtn', deleteEvent);
+//deleteEvent is callback function executed when the specified event occurs 
 
 
 });
