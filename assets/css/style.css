@@ -46,24 +46,37 @@ header {
 .past {
   background-color: #d3d3d3;
   color: white;
+  border-radius: 0.9rem !important; 
 }
 
 .present {
   background-color: #ff6961;
   color: white;
+  border-radius: 0.9rem !important; 
 }
 
 .future {
   background-color: #77dd77;
   color: white;
+  border-radius: 0.9rem !important; 
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  border-radius: 5px;
+}
+
+.deleteBtn {
+  border: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(213, 6, 6);
+  color: white;
+  border-radius: 5px;
 }
 
 .saveBtn i:hover {
@@ -77,6 +90,7 @@ header {
   color: #000000;
   border-top: 1px dashed #000000;
   border: 1px solid #000000; /* Add this line for a border around each hour */
+  
 }
 
 .time-block {
@@ -102,3 +116,5 @@ header {
   padding: 20px; /* Add padding around the content */
   border: 2px solid #000000; /* Add a 2-pixel solid border around the container */
 }
+
+
