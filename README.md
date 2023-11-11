@@ -1,13 +1,13 @@
 # work-day-scheduler
-A calendar application that allows a user to save events for each hour of the day.
+A daily calendar application that allows a user to save events for each hour of the day. The calendar also provides functionality to delete events and to navigate to other days and save events in them. 
 
-https://cazbella.github.io/
+https://cazbella.github.io/work-day-scheduler/
 
-This project is designed to solve the challenges set out in the Module 7 assignment. It primarily uses JavaScript with some bootstrap and begins to use third party APIs.  
+This project is designed to solve the challenges set out in the Module 7 assignment. It primarily uses JavaScript with JQuery. It also utilises some bootstrap and begins to use third party APIs.  
 
 ## Description
 
-This project is an application that presents the user with quiz questions about intermediate level javascript. 
+This project is an application that presents the user with a 'Work Day Sceduler
 
 Please find a screenshot below of the landing area with the console;
 
@@ -58,12 +58,13 @@ The JavaScript files that contain this code contains lots of comments. The tutor
 __A Note about Function__
 _________________________
 
-I have tried several things to try and
+I have tried several things to try and I am still trying to 
 
 
 ## References
 
-I completed the Northcoders pre-work JavaScript module, so I had a foundation knowledge of some of the concepts covered. I have used google a lot this week, including Stack Overflow, W3 schools and MDN web docs. I have used ask BCS this week for help with GitHub. We also used the 1:1 tutor session this week to look at assignment 6. One page in particular that I used this week was;
+I completed the Northcoders pre-work JavaScript module, so I had a foundation knowledge of some of the concepts covered. I have used google a lot this week, including Stack Overflow, W3 schools and MDN web docs. I have used ask the tutor this week for help coding some of my functions. Pages in particular that I have used to complete this task were;
+https://www.w3schools.com/jquery/html_removeclass.asp
 
 
 

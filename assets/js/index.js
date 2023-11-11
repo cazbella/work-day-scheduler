@@ -8,9 +8,10 @@ $(document).ready(function () {
   var currentDateElement = $('#currentDate');
   var container = $('.calendar-container');
   var currentDateElement = $('#currentDate');
+  var rightNow = dayjs().format('dddd D MMMM YYYY [at] h:mm:ss a');
 
   function displayDay() {
-    var rightNow = dayjs().format('dddd D MMMM YYYY [at] h:mm:ss a'); timeEl.text(rightNow);
+     timeEl.text(rightNow);
   }
 
   displayDay();
@@ -71,12 +72,12 @@ $(document).ready(function () {
       //adds CSS classes ('past', 'present', or 'future') to the timeBlock element based currentDate
 
       //makes all past grey
-      if (currentDate.$D < currentDate.get("month")) {
-        console.log("past!!!!!!!")
+      if (currentDate.isBefore(dayjs(), 'day')) {
+        console.log("past!")
         timeBlock.addClass('past');
       }
       //makes all future green
-      else if (currentDate.$D > currentDate.get("month")) {
+      else if (currentDate.isAfter(dayjs(), 'day')) {
         timeBlock.addClass('future');
       }
       //this block for current day
