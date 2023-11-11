@@ -13,7 +13,7 @@ Please find a screenshot below of the landing area with the console;
 
 ![Screenshot of landing area](assets/images/Screenshot-landing-area.png)
 
-One of the hardest things on this project was understanding the logic behind setItem and getItem, and how the web browser works. I also had to look up a lot of syntax and stil have a lot to try to remember here! I also screen recorded a video but 
+One of the hardest things on this project was understanding the logic behind 'setItem' and 'getItem', and how the web browser works. I also had to look up a lot of syntax and stil have a lot to try to remember here! I also screen recorded a video but 
 
 I have completed a JavaScript course previously, but I had not encountered some of the syntax required. I have used a lot of the logic that we talked about in class this week. 
 
@@ -23,43 +23,42 @@ Please find a link to the live application here;
 
 https://cazbella.github.io/
 
-The video below shows 
-![Screen recording of functionality](assets/images/screen-recording-functionality.mov)
+The video below shows how the application works. 
 
-1. Please click the area inside the hour required in order to input text
+![Screen recording of functionality](assets/images/screen-recording.mov)
 
-![Screenshot of first question](assets/images/Screenshot-first-question.png)
+1. Please click the area inside the hour required in order to input text. Type an event into a time block. Then click the save button to save the event. 
 
-2. If the 
+2. If the user navigates to a past or future day, or refreshes the page, the events persist on the page as they are saved to local storage in the browser. 
 
-![Screenshot of first question](assets/images/Screenshot-notification.png)
+3. The time blocks are colour coded. As shown on the landing page, current hour is red, past hours are grey and future hours are green. If the user navigates to a different day in the past, all blocks are grey. If the user navigates to a different day in the future, all blocks are green.
 
-3. The user works 
+This image shows the past; 
 
-![Screenshot of score/initials input screen](assets/images/Screenshot-score-initials.png)
+![Screenshot of past days](assets/images/Screenshot-past-days.png)
 
+This image shows the future
 
+![Screenshot of fruture days](assets/images/Screenshot-future-days.png)
 
-4. When the user 
-
-![Screenshot of ](assets/images/Screenshot-scores-list.png)
+4. I also added a delete button so the user can delete events as necessary. 
 
 
 __The Console__
 _______________
 It is a requirement that there are no errors in the console.
 
-Please open the HTML file in the browser and inspect the page. Then please view the console. You should see that there are no errors. The screenshots also show this. 
+Please open the HTML file in the browser and inspect the page. Then please view the console. You should see that there are no errors. The video should also show this. 
 
 __A Note about Pseudocode__
 _____________________________
 
-The JavaScript files that contain this code contains lots of comments. The tutor was asked if this was good practice and the advice given was that as I am new to web development, there should be lots of comments at this stage. Hopefully the comments and the commits explain the process I followed to complete the assignment. I have also made notes here to help me remember the process and what the syntax means. I feel that I am progressing in this area and need to use fewer comments this time. 
+The JavaScript files that contain this code contains lots of comments. The tutor was asked if this was good practice and the advice given was that as I am new to web development, there should be lots of comments at this stage. Hopefully the comments and the commits explain the process I followed to complete the assignment. I have also made notes here to help me remember the process and what the syntax means. 
 
 __A Note about Function__
 _________________________
 
-I have tried several things to try and I am still trying to 
+I have tried several things to try and improve responsiveness for a mobile screen. I will keep trying!
 
 
 ## References
@@ -69,9 +68,6 @@ https://www.w3schools.com/jquery/html_removeclass.asp
 https://codepen.io/travishorn/pen/oLgyPO
 https://day.js.org/docs/en/get-set/get
 https://api.jquery.com/text/#text
-
-
-
 
 
 ## Contributing
