@@ -3,19 +3,17 @@ A daily calendar application that allows a user to save events for each hour of 
 
 https://cazbella.github.io/work-day-scheduler/
 
-This project is designed to solve the challenges set out in the Module 7 assignment. It primarily uses JavaScript with JQuery. It also utilises some bootstrap and begins to use third party APIs.  
+This project is designed to solve the challenges set out in the requirements of the Module 07 Challenge in the EdX Frontend Web Development Bootcamp. It primarily uses JavaScript with JQuery. It also utilises some bootstrap and begins to use third party APIs.  
 
 ## Description
 
-This project is an application that presents the user with a 'Work Day Sceduler
+This project is an application that presents the user with a 'Work Day Scheduler
 
 Please find a screenshot below of the landing area with the console;
 
-![Screenshot of landing area](assets/images/Screenshot-quiz-landing-area-with-console.png)
+![Screenshot of landing area](assets/images/Screenshot-landing-area.png)
 
-This project aims to show my current skills in using JavaScript that we have learned on the course so far, solving the requirements of the Module 07 Challenge in the EdX Frontend Web Development Bootcamp. 
-
-One of the hardest things was 
+One of the hardest things on this project was understanding the logic behind setItem and getItem, and how the web browser works. I also had to look up a lot of syntax and stil have a lot to try to remember here! I also screen recorded a video but 
 
 I have completed a JavaScript course previously, but I had not encountered some of the syntax required. I have used a lot of the logic that we talked about in class this week. 
 
@@ -24,6 +22,9 @@ I have completed a JavaScript course previously, but I had not encountered some 
 Please find a link to the live application here; 
 
 https://cazbella.github.io/
+
+The video below shows 
+![Screen recording of functionality](assets/images/screen-recording-functionality.mov)
 
 1. Please click the area inside the hour required in order to input text
 
@@ -65,6 +66,11 @@ I have tried several things to try and I am still trying to
 
 I completed the Northcoders pre-work JavaScript module, so I had a foundation knowledge of some of the concepts covered. I have used google a lot this week, including Stack Overflow, W3 schools and MDN web docs. I have used ask the tutor this week for help coding some of my functions. Pages in particular that I have used to complete this task were;
 https://www.w3schools.com/jquery/html_removeclass.asp
+https://codepen.io/travishorn/pen/oLgyPO
+https://day.js.org/docs/en/get-set/get
+https://api.jquery.com/text/#text
+
+
 
 
 

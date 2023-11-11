@@ -45,11 +45,10 @@ $(document).ready(function () {
   //need a for loop for i to loop through times of the day. Need to use hours of the day (9-18??)
   //need variables to store elements after finding current value of i
   //need conditional to check whether there are events stored for the current hour (i) within the events object.
-  //there are events for the current hour, need to set the value of the timeSlot element to the corresponding event text. If there are no events, need to clear the text area by setting its value to an empty string (like in lesson code
+  //there are events for the current hour, need to set the value of the timeSlot element to the corresponding event text. If there are no events, need to clear the text area by setting its value to an empty string (like in lesson code)
 
   //worked through with tutor
   function updateCalendar() {
-    console.log("in the update fnction: ", currentDate.$D)
     //updates the text content of the HTML element with the id "currentDate" to display the current date in a specific format using the format method of the currentDate object
     currentDateElement.text(currentDate.format('dddd, MMMM D, YYYY'));
     // get data from the browser's localStorage based on the current date in format ('YYYY-MM-DD'). It parses the JSON data, and if there is no data for the current date, it initializes an empty object as the value of the events variable.
