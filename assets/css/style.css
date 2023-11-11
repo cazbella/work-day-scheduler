@@ -41,6 +41,7 @@ header {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  border-radius: 0.5rem !important; 
 }
 
 .row {
@@ -80,6 +81,7 @@ header {
   background-color: #06aed5;
   color: white;
   border-radius: 5px;
+  border-radius: 0.5rem !important; 
 }
 
 .deleteBtn {
@@ -89,6 +91,7 @@ header {
   background-color: rgb(213, 6, 6);
   color: white;
   border-radius: 5px;
+  border-radius: 0.5rem !important; 
 }
 
 .saveBtn i:hover {
@@ -104,24 +107,23 @@ header {
 
 /* adds border to each hour */
 .hour {
-  /* background-color: #ffffff; */
   color: #000000;
   border-top: 1px dashed #000000;
-  border: 1px solid #000000; /* Add this line for a border around each hour */
+  border: 1px solid #000000; 
   
 }
 
 .time-block {
-  border: 1px solid #000000; /* Add this line for a border around each time block */
+  border: 1px solid #000000; 
   text-align: center;
   border-radius: 15px;
-  padding: 10px; /* Add padding to create separation between the border and inner elements */
+  padding: 10px; 
 }
 
 .calendar-container {
   overflow-x: hidden;
   overflow-y: auto;
-  height: 100vh; /* Adjust the height as needed */
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -131,8 +133,8 @@ header {
 }
 
 .calendar-container {
-  padding: 20px; /* Add padding around the content */
-  border: 2px solid #000000; /* Add a 2-pixel solid border around the container */
+  padding: 20px; 
+  border: 2px solid #000000;
 }
 
 
