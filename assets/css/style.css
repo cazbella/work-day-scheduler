@@ -13,6 +13,7 @@ textarea {
   padding: 10px;
   z-index: 1;
   padding-top: 10px;
+  margin-top: 20px;
 }
 
 header {
@@ -150,10 +151,19 @@ header {
     width: 35%;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .saveBtn,
   .deleteBtn {
     width: 100%;
+    margin-block-end: auto;
+  }
+  .row {
+    height: 150px;
   }
 }
+
+
+
+
+
 
